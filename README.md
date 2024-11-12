@@ -12,4 +12,7 @@
  - comment using //
  - Varibales
 
- 
+ ## 3. Restaurant Website
+ - Connect multi pages using include
+ - dynamically show title, hero section heading, Images, etc
+ - Error in php
