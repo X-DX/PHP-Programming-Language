@@ -8,7 +8,7 @@
 // 2. Fatal Errors
 // These errors happen when PHP encounters an issue it can’t recover from, like calling a non-existent function or trying to instantiate a non-existent class.
 <?php
-    nonExistentFunction(); // Function doesn't exist
+    // nonExistentFunction(); // Function doesn't exist
 ?>
 
 // 3. Warning Errors
