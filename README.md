@@ -16,3 +16,8 @@
  - Connect multi pages using include
  - dynamically show title, hero section heading, Images, etc
  - Error in php
+
+ ## 4. Data Types and Conditions
+    - Data Types (Number, String, Booleans)
+    - Basic functions (var_damp(), empty(), etc)
+    - Conditions (if else)
