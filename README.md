@@ -21,4 +21,7 @@
     - Data Types (Number, String, Booleans)
     - Basic functions (var_damp(), empty(), etc)
     - Conditions (if else)
+    - string:
+        - string (single quotes, dot(.))
+        - double quotes
 
