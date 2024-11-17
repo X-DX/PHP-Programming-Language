@@ -24,4 +24,4 @@
     - string:
         - string (single quotes, dot(.))
         - double quotes
-
+    - Numbers
