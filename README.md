@@ -25,3 +25,7 @@
         - string (single quotes, dot(.))
         - double quotes
     - Numbers
+
+## var_dump()
+- debug code
+- what inside varibale, also tell type of
