@@ -26,6 +26,8 @@
         - double quotes
     - Numbers
 
-## var_dump()
+## 5. var_dump()
 - debug code
 - what inside varibale, also tell type of
+
+## 6. Boolean & Comparison Operators
