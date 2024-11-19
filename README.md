@@ -31,3 +31,8 @@
 - what inside varibale, also tell type of
 
 ## 6. Boolean & Comparison Operators
+- true and false
+- check boolean value using comparision operator
+
+## 7. If statement
+- how to use if condition
