@@ -36,3 +36,4 @@
 
 ## 7. If statement
 - how to use if condition
+- else if and else clause
