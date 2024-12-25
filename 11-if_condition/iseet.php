@@ -22,5 +22,17 @@
             }
         ?>
     </pre>
+
+    <!-- Alternative syntax in php : enhance clearity in html integration -->
+    <!-- here addition white space added -->
+    <pre>
+        <?php if(!empty($pageTitle)) : ?>
+            <h1>
+                <span>
+                    <?php echo $pageTitle ?>
+                </span>
+            </h1>
+        <?php endif; ?>
+    </pre>
 </body>
 </html>
