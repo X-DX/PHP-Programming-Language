@@ -39,3 +39,6 @@
 - else if and else clause
 - The `isset`, `empty` and `unset` functions: Validate and Delete Variables
 - Alternative syntax in php : enhance clearity in html integration
+
+## 8. Boolean Operators
+- 
