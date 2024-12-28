@@ -41,4 +41,4 @@
 - Alternative syntax in php : enhance clearity in html integration
 
 ## 8. Boolean Operators
-- 
+- !, &&, ||, xor

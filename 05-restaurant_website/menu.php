@@ -1,5 +1,6 @@
 <?php 
   $pageTitle = "Menu";
+  $pageKey = "menu";
   $headerImage = 'images/pexels-fwstudio-172289.jpg';
   include 'inc/header.inc.php'; 
 ?>
