@@ -47,4 +47,5 @@
     - create and access the array
     - Test the existence of specfic key and value
     - change,delete and append in array
+    - Array function: Find duplicate elements and sort arrays
     
