@@ -17,7 +17,18 @@
 
             // add element
             $categories[] = 'Nature books'; 
-            var_dump($categories);
+            // var_dump($categories);
+
+            //example code for giveway
+            $names = [
+                'Arup', 'Sanjay', 'Mark', 'Sam', 'Rahul',
+            ];
+
+            $num = count($names);
+            $choice = rand(0,$num-1);
+            var_dump($names[$choice]);
+
+            // var_dump($names[rand(0, count($names) - 1)]); // in one line of code
         ?>
     </pre>
 </body>
