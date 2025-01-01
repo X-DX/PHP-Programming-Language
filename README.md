@@ -50,4 +50,5 @@
     - Array function: Find duplicate elements and sort arrays
     - The 'Foreach' loop: iterate over element in an array
     - control loop with break and continue
+    - Additional Array Function
     
