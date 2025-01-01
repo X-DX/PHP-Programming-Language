@@ -23,8 +23,26 @@
 
             // sort
             sort($names); // its change the original array
-            var_dump($names);
+            // var_dump($names);
+
+            // foreach loop : go each element 
+            foreach($names as $item){
+                var_dump($item);
+                if($item === 'Rahul'){
+                    echo "It is array";
+                }
+            }
         ?>
+    </pre>
+
+    <pre>
+        <ul>
+            <?php foreach($names as $name): ?>
+                <li>
+                    <?=$name?>
+                </li>
+            <?php endforeach; ?>
+        </ul>
     </pre>
 </body>
 </html>
