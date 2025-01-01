@@ -36,11 +36,38 @@
     </pre>
 
     <pre>
+        <!-- continue and break -->
+        <?php
+            // This is not a good way to write it...
+            // foreach($names as $item){
+            //     if($item !== 'Rahul' AND $item !== 'Rohit'){
+            //         var_dump($item);
+            //     }
+            // }
+
+            foreach($names as $name){
+                if($name === 'Rahul') continue;
+                if($name === 'Rohit') continue;
+                if($name === 'Arup') break;
+                var_dump($name);
+            }
+        ?>
+        
+    </pre>
+
+    <pre>
         <ul>
             <?php foreach($names as $name): ?>
-                <li>
-                    <?=$name?>
-                </li>
+                <li><?=$name?></li>
+            <?php endforeach; ?>
+        </ul>
+    </pre>
+
+    <pre>
+        <ul>
+            <?php foreach($names as $name): ?>
+                <?php if($name === 'Rohit') continue; ?>
+                <li><?php echo $name ?></li>
             <?php endforeach; ?>
         </ul>
     </pre>
