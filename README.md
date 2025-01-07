@@ -52,3 +52,5 @@
     - control loop with break and continue
     - Additional Array Function
     
+## 10. Associative Arrays
+    - Motivation & Define an Associative Array
