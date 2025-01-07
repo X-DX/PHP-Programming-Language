@@ -53,4 +53,5 @@
     - Additional Array Function
     
 ## 10. Associative Arrays
-    - Motivation & Define an Associative Array
+    -  Motivation & Define an Associative Array
+    -  Manipulate and Output Keys and Values form Associative Arrays
