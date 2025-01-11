@@ -61,3 +61,4 @@
     - The `$_GET` Array: Retrieve User Input from the URL
     - Dynamic URL Creation: Craft Links with Parameters and `http_build_query`
     - Submit a form through GET
+    - Submit a form through POST
