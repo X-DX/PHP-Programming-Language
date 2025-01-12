@@ -63,3 +63,5 @@
     - Submit a form through GET
     - Submit a form through POST
     - Securing Websites: Prevent Cross-Site Scripting (XSS) with `htmlspecialchars`
+
+## 12. 
