@@ -62,3 +62,4 @@
     - Dynamic URL Creation: Craft Links with Parameters and `http_build_query`
     - Submit a form through GET
     - Submit a form through POST
+    - Securing Websites: Prevent Cross-Site Scripting (XSS) with `htmlspecialchars`
