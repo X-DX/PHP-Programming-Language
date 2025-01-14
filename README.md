@@ -64,4 +64,21 @@
     - Submit a form through POST
     - Securing Websites: Prevent Cross-Site Scripting (XSS) with `htmlspecialchars`
 
-## 12. 
+## 12. Build a multi page Image Gallery
+    - urlencode() : 
+        Encoding: This function encodes all special characters except for the following: - (hyphen), . (period), _ (underscore), ~ (tilde)
+        Use Cases: Generally used for encoding data within query strings of URLs.
+
+    - rawurlencode() : 
+        Encoding: This function encodes all special characters except for the following: - (hyphen), . (period), . (period), _ (underscore), ~ (tilde), / (forward slash)
+        Use Cases: Often used for encoding URLs themselves (e.g., in path components).
+
+    - Eg:
+        $string = "Hello, world! This is a test string with spaces.";
+        echo "urlencode(): " . urlencode($string) . "<br>";
+        echo "rawurlencode(): " . rawurlencode($string) . "<br>";
+
+        urlencode(): Hello%2C+world%21+This+is+a+test+string+with+spaces.
+        rawurlencode(): Hello%2C%20world%21%20This%20is%20a%20test%20string%20with%20spaces.
+
+    - CSS Attributes for Image Control: `object-fit` and `aspect-ratio` (Hint)
