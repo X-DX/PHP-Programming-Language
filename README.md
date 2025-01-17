@@ -82,3 +82,6 @@
         rawurlencode(): Hello%2C%20world%21%20This%20is%20a%20test%20string%20with%20spaces.
 
     - CSS Attributes for Image Control: `object-fit` and `aspect-ratio` (Hint)
+
+## 13. Advanced Concepts
+    - Identify Types with `is_` Functions & Manage Mixed-Type Arrays
