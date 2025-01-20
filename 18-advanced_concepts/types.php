@@ -21,7 +21,7 @@
             var_dump($_GET);
 
             if(isset($_GET['name'])){
-                $name = (string) $_GET['name'];
+                $name = @(string) $_GET['name'];
                 var_dump($name . '!!!');
             }
         ?>
