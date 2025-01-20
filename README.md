@@ -88,3 +88,4 @@
     - Type Casting: Solve Type Mismatches and Debug Code Errors Efficiently
     - The @ Symbol: Silence PHP Warnings
     - The Null Coalescing Operator: Simplify Default Value Assignments
+    - Optimizing `include`: Use __DIR__ for Reliable File Path Resolution
