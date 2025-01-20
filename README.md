@@ -85,3 +85,4 @@
 
 ## 13. Advanced Concepts
     - Identify Types with `is_` Functions & Manage Mixed-Type Arrays
+    - Type Casting: Solve Type Mismatches and Debug Code Errors Efficiently
