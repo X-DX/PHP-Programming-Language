@@ -92,4 +92,4 @@
     - File Inclusion: `include`, `require`, and their *_once` Variants
     - The functions 'file_get_contents' and 'readfile'
     - The `implode` and `explode` functions: Split Strings and Merge Arrays
-    - String Function: strlen, strtolower, trim, strpos
+    - String Function: strlen, strtolower, trim, strpos, nl2br, str_replace
