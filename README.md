@@ -90,3 +90,4 @@
     - The Null Coalescing Operator: Simplify Default Value Assignments
     - Optimizing `include`: Use __DIR__ for Reliable File Path Resolution
     - File Inclusion: `include`, `require`, and their *_once` Variants
+    - The functions 'file_get_contents' and 'readfile'
