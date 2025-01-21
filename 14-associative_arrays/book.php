@@ -27,6 +27,7 @@
 
             // add new element
             $books['William Shakespeare'] = 'Remeo and Julia';
+            
             // delete
             unset($books['Antoine de Saint-Exupery']);
             var_dump(count($books));
