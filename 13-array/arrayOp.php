@@ -11,9 +11,11 @@
             // over write
             $categories = ['Programming', 'Books', 'Desktop', 'Pendrive'];
             $categories[2] = 'Backend';
+            // var_dump($categories);
             
             // delete
-            // unset($categories[3]);
+            unset($categories[3]);
+            // var_dump($categories);
 
             // add element
             $categories[] = 'Nature books'; 
