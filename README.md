@@ -93,3 +93,6 @@
     - The functions 'file_get_contents' and 'readfile'
     - The `implode` and `explode` functions: Split Strings and Merge Arrays
     - String Function: strlen, strtolower, trim, strpos, nl2br, str_replace
+
+## 14. Nested Arrays (Simplify Complex Data Handling)
+    - Define a Nested Array and Access Multi level data
