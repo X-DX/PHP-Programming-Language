@@ -96,3 +96,6 @@
 
 ## 14. Nested Arrays (Simplify Complex Data Handling)
     - Define a Nested Array and Access Multi level data
+    - Extract Data from Nested Arrays by `foreach` Loops
+    - Navigate Multi-Level Data with Nested `foreach` Loops
+    - Deal with irregular Data in nested Array
