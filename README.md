@@ -99,3 +99,7 @@
     - Extract Data from Nested Arrays by `foreach` Loops
     - Navigate Multi-Level Data with Nested `foreach` Loops
     - Deal with irregular Data in nested Array
+
+## 15. Project : build an Air Quality Data Browser
+    - Decode JSON & Handle .bzip2 Compression
+    - 
