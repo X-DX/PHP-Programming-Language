@@ -1,18 +1,25 @@
 <?php
+require __DIR__ . '/inc/functions.inc.php'; 
 
-// import json data and access the element
-$content = file_get_contents(__DIR__.'/../data/index.json');
-// var_dump($content);
-// The json_decode() function is used to decode or convert a JSON object to a PHP object.
-// var_dump(json_decode($content));
+$cities = json_decode(
+    file_get_contents(__DIR__ . '/../data/index.json'),
+    true
+);
 
-$data = json_decode($content);
-// var_dump($data[0]);
-// var_dump($data[0]->city);
+?>
 
-// phpinfo();
+<?php require __DIR__ . '/views/header.inc.php'; ?>
 
-// measurements
-// check file size
-$data2 =json_decode( file_get_contents('compress.bzip2://'. __DIR__ .'/../data/singapore.json.bz2'),true );
-var_dump($data2);
+<ul>
+    <?php foreach($cities AS $city): ?>
+        <li>
+            <a href="city.php?<?php echo http_build_query(['city' => $city['city']]); ?>">
+                <?php echo e($city['city']); ?>,
+                <?php echo e($city['country']); ?>
+                (<?php echo e($city['flag']); ?>)
+            </a>
+        </li>
+    <?php endforeach; ?>
+</ul>
+
+<?php require __DIR__ . '/views/footer.inc.php'; ?>
