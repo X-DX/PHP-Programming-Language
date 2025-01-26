@@ -1,6 +1,7 @@
 <?php
 
 // import json data and access the element
+// The file_get_contents() reads a file into a string.
 $content = file_get_contents(__DIR__.'/../data/index.json');
 // var_dump($content);
 // The json_decode() function is used to decode or convert a JSON object to a PHP object.

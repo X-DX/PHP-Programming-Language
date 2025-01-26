@@ -6,6 +6,8 @@ $cities = json_decode(
     true
 );
 
+// print_r($cities);
+
 ?>
 
 <?php require __DIR__ . '/views/header.inc.php'; ?>

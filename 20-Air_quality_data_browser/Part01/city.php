@@ -6,12 +6,15 @@ if (!empty($_GET['city'])) {
     $city = $_GET['city'];
 }
 
+// var_dump($city);
+
 $filename = null;
 if (!empty($city)) {
     $cities = json_decode(
         file_get_contents(__DIR__ . '/../data/index.json'),
         true
     );
+    // var_dump($cities);
     foreach ($cities AS $currentCity) {
         if ($currentCity['city'] === $city) {
             $filename = $currentCity['filename'];
@@ -20,11 +23,15 @@ if (!empty($city)) {
     }
 }
 
+// var_dump($filename);
+
 if (!empty($filename)) {
     $results = json_decode(
         file_get_contents('compress.bzip2://' . __DIR__ . '/../data/' . $filename),
         true
     )['results'];
+
+    // var_dump($results[0]);
 
     $stats = [];
     foreach ($results AS $result) {
@@ -46,6 +53,8 @@ if (!empty($filename)) {
 ?>
 
 <?php require __DIR__ . '/views/header.inc.php'; ?>
+
+
 <?php if (empty($city)): ?>
     <p>The city could not be loaded.</p>
 <?php else: ?>
