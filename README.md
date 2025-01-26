@@ -103,3 +103,4 @@
 ## 15. Project : build an Air Quality Data Browser
     - Decode JSON & Handle .bzip2 Compression
     - Transforming JSON Data into Web Content: Create Dynamic City Links
+    - Crafting City Statistics Pages: Retrieve Data & Handle Errors
