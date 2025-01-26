@@ -104,3 +104,4 @@
     - Decode JSON & Handle .bzip2 Compression
     - Transforming JSON Data into Web Content: Create Dynamic City Links
     - Crafting City Statistics Pages: Retrieve Data & Handle Errors
+    - Analyzing PM2.5 Data: Calculate Air Quality Index
