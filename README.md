@@ -106,3 +106,4 @@
     - Crafting City Statistics Pages: Retrieve Data & Handle Errors
     - Analyzing PM2.5 Data: Calculate Air Quality Index
     - Manage Data Integrity & Integrate Additional Measurement Parameters (PM10)
+    - Polishing the Output: Add Numeric Formatting and Measurement Units

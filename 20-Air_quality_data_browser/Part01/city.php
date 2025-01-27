@@ -7,15 +7,16 @@ if (!empty($_GET['city'])) {
 }
 
 $filename = null;
+$cityInformation = [];
 if (!empty($city)) {
     $cities = json_decode(
         file_get_contents(__DIR__ . '/../data/index.json'),
         true
     );
-    // var_dump($cities);
     foreach ($cities AS $currentCity) {
         if ($currentCity['city'] === $city) {
             $filename = $currentCity['filename'];
+            $cityInformation = $currentCity;
             break;
         }
     }
@@ -27,8 +28,19 @@ if (!empty($filename)) {
         true
     )['results'];
 
-    // var_dump($results);
-
+    $units = [
+        'pm25' => null,
+        'pm10' => null
+    ];
+    foreach ($results AS $result) {
+        if (!empty($units['pm25']) && !empty($units['pm10'])) break;
+        if ($result['parameter'] === 'pm25') {
+            $units['pm25'] = $result['unit'];
+        }
+        if ($result['parameter'] === 'pm10') {
+            $units['pm10'] = $result['unit'];
+        }
+    }
 
     $stats = [];
     foreach ($results AS $result) {
@@ -57,6 +69,7 @@ if (!empty($filename)) {
 <?php if (empty($city)): ?>
     <p>The city could not be loaded.</p>
 <?php else: ?>
+    <h1><?php echo e($cityInformation['city']); ?> <?php echo e($cityInformation['flag']); ?></h1>
     <?php if (!empty($stats)): ?>
         <table>
             <thead>
@@ -70,8 +83,14 @@ if (!empty($filename)) {
                 <?php foreach($stats AS $month => $measurements): ?>
                     <tr>
                         <th><?php echo e($month); ?></th>
-                        <td><?php echo e(array_sum($measurements['pm25']) / count($measurements['pm25'])); ?></td>
-                        <td><?php echo e(array_sum($measurements['pm10']) / count($measurements['pm10'])); ?></td>
+                        <td>
+                            <?php echo e(round(array_sum($measurements['pm25']) / count($measurements['pm25']), 2)); ?>
+                            <?php echo e($units['pm25']); ?>
+                        </td>
+                        <td>
+                            <?php echo e(round(array_sum($measurements['pm10']) / count($measurements['pm10']), 2)); ?>
+                            <?php echo e($units['pm10']); ?>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
