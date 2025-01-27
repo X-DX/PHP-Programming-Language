@@ -6,8 +6,6 @@ if (!empty($_GET['city'])) {
     $city = $_GET['city'];
 }
 
-// var_dump($city);
-
 $filename = null;
 if (!empty($city)) {
     $cities = json_decode(
@@ -23,26 +21,29 @@ if (!empty($city)) {
     }
 }
 
-// var_dump($filename);
-
 if (!empty($filename)) {
     $results = json_decode(
         file_get_contents('compress.bzip2://' . __DIR__ . '/../data/' . $filename),
         true
     )['results'];
 
-    // var_dump($results[0]);
+    // var_dump($results);
+
 
     $stats = [];
     foreach ($results AS $result) {
-        if ($result['parameter'] !== 'pm25') continue;
-        // var_dump($result);
+        if ($result['parameter'] !== 'pm25' && $result['parameter'] !== 'pm10') continue;
+        if ($result['value'] < 0) continue;
 
         $month = substr($result['date']['local'], 0, 7);
         if (!isset($stats[$month])) {
-            $stats[$month] = [];
+            $stats[$month] = [
+                'pm25' => [],
+                'pm10' => []
+            ];
         }
-        $stats[$month][] = $result['value'];
+
+        $stats[$month][$result['parameter']][] = $result['value'];
         // var_dump($stats);
         // var_dump($month);
         // break;
@@ -53,19 +54,27 @@ if (!empty($filename)) {
 ?>
 
 <?php require __DIR__ . '/views/header.inc.php'; ?>
-
-
 <?php if (empty($city)): ?>
     <p>The city could not be loaded.</p>
 <?php else: ?>
     <?php if (!empty($stats)): ?>
         <table>
-            <?php foreach($stats AS $month => $measurements): ?>
+            <thead>
                 <tr>
-                    <th><?php echo e($month); ?></th>
-                    <td><?php echo e(array_sum($measurements) / count($measurements)); ?></td>
+                    <th>Month</th>
+                    <th>PM 2.5 concentration</th>
+                    <th>PM 10 concentration</th>
                 </tr>
-            <?php endforeach; ?>
+            </thead>
+            <tbody>
+                <?php foreach($stats AS $month => $measurements): ?>
+                    <tr>
+                        <th><?php echo e($month); ?></th>
+                        <td><?php echo e(array_sum($measurements['pm25']) / count($measurements['pm25'])); ?></td>
+                        <td><?php echo e(array_sum($measurements['pm10']) / count($measurements['pm10'])); ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
         </table>
     <?php endif; ?>
 <?php endif; ?>
