@@ -71,22 +71,45 @@ if (!empty($filename)) {
 <?php else: ?>
     <h1><?php echo e($cityInformation['city']); ?> <?php echo e($cityInformation['flag']); ?></h1>
     <?php if (!empty($stats)): ?>
+        <!-- <pre></?php var_dump(array_keys($stats)); ?></pre> -->
         <canvas id="aqi-chart" style="width: 300px; height:200px;"></canvas>
         <script src="scripts/chart.umd.js"></script>
+        <?php
+            $lables = array_keys($stats);
+            sort($lables);
+
+            $pm25 = [];
+            $pm10 = [];
+            foreach ($lables AS $lable) {
+                $measurements = $stats[$lable];
+                $pm25[] = array_sum($measurements['pm25']) / count($measurements['pm25']);
+                $pm10[] = array_sum($measurements['pm10']) / count($measurements['pm10']);
+            }
+        ?>
         <script>
             document.addEventListener('DOMContentLoaded', function(){
                 const ctx = document.getElementById('aqi-chart');
                 const chart = new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: ['Label 01','Label 02','Label 03','Label 04','Label 05','Label 06','Label 07'],
-                    datasets: [{
-                        label: 'My First Dataset',
-                        data: [65, 59, 80, 81, 56, 55, 40],
-                        fill: false,
-                        borderColor: 'rgb(75, 192, 192)',
-                        tension: 0.1
-                    }]
+                    labels: <?php echo json_encode($lables); ?>,
+                    datasets: 
+                    [
+                        {
+                            label: <?php echo json_encode("AQI, PM2.5 in {$units['pm25']}"); ?>,
+                            data: <?php echo json_encode($pm25); ?>,
+                            fill: false,
+                            borderColor: 'rgb(75, 192, 192)',
+                            tension: 0.1
+                        },
+                        {
+                            label: <?php echo json_encode("AQI, PM10 in {$units['pm10']}"); ?>,
+                            data: <?php echo json_encode($pm10); ?>,
+                            fill: false,
+                            borderColor: 'rgb(152, 227, 105)',
+                            tension: 0.1
+                        }
+                    ]
                 }
                 });
             });

@@ -108,3 +108,4 @@
     - Manage Data Integrity & Integrate Additional Measurement Parameters (PM10)
     - Polishing the Output: Add Numeric Formatting and Measurement Units
     - Integrating Chart.js with PHP
+    - Show your data in the chart JS
