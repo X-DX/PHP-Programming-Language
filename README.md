@@ -113,3 +113,4 @@
 
 ## 16. PHP Loop
     - The 'for' loop: Repeat Action and Manage Iterations
+    - The `while` loop: Execute Code with Conditional Repeats and Avoid Infinite Loops
