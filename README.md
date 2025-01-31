@@ -110,3 +110,6 @@
     - Integrating Chart.js with PHP
     - Show your data in the chart JS
     - Ensuring Data integrity: Deal with Missing Data
+
+## 16. PHP Loop
+    - The 'for' loop: Repeat Action and Manage Iterations
