@@ -114,3 +114,7 @@
 ## 16. PHP Loop
     - The 'for' loop: Repeat Action and Manage Iterations
     - The `while` loop: Execute Code with Conditional Repeats and Avoid Infinite Loops
+    
+## 17. File 
+    - Utilize `opendir`, `readdir`, and `closedir` for Directory Management
+    - 
