@@ -117,4 +117,5 @@
     
 ## 17. File 
     - Utilize `opendir`, `readdir`, and `closedir` for Directory Management
-    - 
+    - Using `readdir` in a while Loop: Read File Directories Efficiently
+    - The `pathinfo` function: Extract File Path Components for Filtering File Types
