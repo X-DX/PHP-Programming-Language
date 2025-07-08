@@ -9,6 +9,10 @@
 <body>
     <header><h1>Important file functions</h1></header>
     <main><pre><?php 
+
+        // The file_exists() function checks whether a file or directory exists.
+        // The is_file() function checks whether the specified filename is a regular file.
+
         var_dump(file_exists(__DIR__ . '/images/IMG_0933.jpg'));
         var_dump(file_exists(__DIR__ . '/images/IMG_0933.txt'));
         var_dump(file_exists(__DIR__ . '/images'));

@@ -11,7 +11,8 @@
     <main>
         <pre>
             <?php 
-                // The opendir() function in PHP is used to open a directory handle, which allows you to read the contents of a directory. It returns a directory handle that can be used with other directory-related functions like readdir() and closedir().
+                // The opendir() function in PHP is used to open a directory handle, which allows you to read the contents of a directory.
+                // It returns a directory handle that can be used with other directory-related functions like readdir() and closedir().
 
                 // opendir($dir) opens the directory.
                 // readdir($handle) reads files inside the directory one by one.
@@ -27,6 +28,15 @@
                 var_dump(readdir($handle));
                 var_dump(readdir($handle));
                 closedir($handle);
+            ?>
+
+            <?php
+                // Best Practice: Use a while loop
+                $handle2 = opendir(__DIR__ . '/images');
+                while(($file = readdir($handle2)) !== false){
+                    echo  $file . "\n";
+                }
+                closedir($handle2);
             ?>
         </pre>
     </main>
