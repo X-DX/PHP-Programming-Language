@@ -120,3 +120,11 @@
     - Using `readdir` in a while Loop: Read File Directories Efficiently
     - The `pathinfo` function: Extract File Path Components for Filtering File Types
     - File Functions: `file_exists`, `is_file`, `is_dir`, `filemtime`, `filesize`,...
+
+## 18. Database
+    - Basic of DBMS
+    - myphpadmin overview
+    - DB connections with PDO
+    - Data Retrieval with PDO: Fetch Data from a Database
+    - Rendering Fetched Data as HTML: Enhance Readability and Security
+    - SQL Query Basics: Utilize the ORDER BY Clause and SELECT Specific Columns
