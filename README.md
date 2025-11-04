@@ -146,3 +146,5 @@
     - Data Retrieval with PDO: Fetch Data from a Database
     - Rendering Fetched Data as HTML: Enhance Readability and Security
     - SQL Query Basics: Utilize the ORDER BY Clause and SELECT Specific Columns
+    - Filter Data with the WHERE Clause and Fetch Individual Entries with PDO
+    - Secure Parameter Handling in PDO: Prevent SQL Injection with Bind Methods
