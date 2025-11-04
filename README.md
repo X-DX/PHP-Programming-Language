@@ -1,23 +1,27 @@
 # PHP-Programming-Language
 
 ## 1. Installation on MAC
-    - install php using brew 
+
+    - install php using brew
     - install aphche server
     - install sql
 
 ## 2. Basics
+
     - How to echo
     - Basic programming, change dynamic bg colour
     - use 'include' command, combine multiple php file.
     - comment using //
     - Varibales
 
- ## 3. Restaurant Website
+## 3. Restaurant Website
+
     - Connect multi pages using include
     - dynamically show title, hero section heading, Images, etc
     - Error in php
 
- ## 4. Data Types and Conditions
+## 4. Data Types and Conditions
+
     - Data Types (Number, String, Booleans)
     - Basic functions (var_damp(), empty(), etc)
     - Conditions (if else)
@@ -27,23 +31,28 @@
     - Numbers
 
 ## 5. var_dump()
+
     - debug code
     - what inside varibale, also tell type of
 
 ## 6. Boolean & Comparison Operators
+
     - true and false
     - check boolean value using comparision operator
 
 ## 7. If statement
+
     - how to use if condition
     - else if and else clause
     - The `isset`, `empty` and `unset` functions: Validate and Delete Variables
     - Alternative syntax in php : enhance clearity in html integration
 
 ## 8. Boolean Operators
+
     - !, &&, ||, xor
 
 ## 9. Array and for loop
+
     - create and access the array
     - Test the existence of specfic key and value
     - change,delete and append in array
@@ -51,12 +60,14 @@
     - The 'Foreach' loop: iterate over element in an array
     - control loop with break and continue
     - Additional Array Function
-    
+
 ## 10. Associative Arrays
+
     -  Motivation & Define an Associative Array
     -  Manipulate and Output Keys and Values form Associative Arrays
 
 ## 11. URL Parameters
+
     - The short `if` Statement
     - The `$_GET` Array: Retrieve User Input from the URL
     - Dynamic URL Creation: Craft Links with Parameters and `http_build_query`
@@ -65,11 +76,12 @@
     - Securing Websites: Prevent Cross-Site Scripting (XSS) with `htmlspecialchars`
 
 ## 12. Build a multi page Image Gallery
-    - urlencode() : 
+
+    - urlencode() :
         Encoding: This function encodes all special characters except for the following: - (hyphen), . (period), _ (underscore), ~ (tilde)
         Use Cases: Generally used for encoding data within query strings of URLs.
 
-    - rawurlencode() : 
+    - rawurlencode() :
         Encoding: This function encodes all special characters except for the following: - (hyphen), . (period), . (period), _ (underscore), ~ (tilde), / (forward slash)
         Use Cases: Often used for encoding URLs themselves (e.g., in path components).
 
@@ -84,6 +96,7 @@
     - CSS Attributes for Image Control: `object-fit` and `aspect-ratio` (Hint)
 
 ## 13. Advanced Concepts
+
     - Identify Types with `is_` Functions & Manage Mixed-Type Arrays
     - Type Casting: Solve Type Mismatches and Debug Code Errors Efficiently
     - The @ Symbol: Silence PHP Warnings
@@ -95,12 +108,14 @@
     - String Function: strlen, strtolower, trim, strpos, nl2br, str_replace
 
 ## 14. Nested Arrays (Simplify Complex Data Handling)
+
     - Define a Nested Array and Access Multi level data
     - Extract Data from Nested Arrays by `foreach` Loops
     - Navigate Multi-Level Data with Nested `foreach` Loops
     - Deal with irregular Data in nested Array
 
 ## 15. Project : build an Air Quality Data Browser
+
     - Decode JSON & Handle .bzip2 Compression
     - Transforming JSON Data into Web Content: Create Dynamic City Links
     - Crafting City Statistics Pages: Retrieve Data & Handle Errors
@@ -112,16 +127,19 @@
     - Ensuring Data integrity: Deal with Missing Data
 
 ## 16. PHP Loop
+
     - The 'for' loop: Repeat Action and Manage Iterations
     - The `while` loop: Execute Code with Conditional Repeats and Avoid Infinite Loops
-    
-## 17. File 
+
+## 17. File
+
     - Utilize `opendir`, `readdir`, and `closedir` for Directory Management
     - Using `readdir` in a while Loop: Read File Directories Efficiently
     - The `pathinfo` function: Extract File Path Components for Filtering File Types
     - File Functions: `file_exists`, `is_file`, `is_dir`, `filemtime`, `filesize`,...
 
 ## 18. Database
+
     - Basic of DBMS
     - myphpadmin overview
     - DB connections with PDO
