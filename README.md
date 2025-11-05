@@ -150,3 +150,5 @@
     - Secure Parameter Handling in PDO: Prevent SQL Injection with Bind Methods
     - Insert Data Securely with INSERT INTO, Placeholders, and the `bindValue` Method
     - Database Manipulation: Using UPDATE and DELETE FROM Securely
+    - Prevent Leakage of Database Connection Information in older (<=8.1) PHP Versions
+    - Choosing the Charset: Ensure Compatibility with with utf8mb4 encoding
