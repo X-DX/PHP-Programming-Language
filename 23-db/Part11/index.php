@@ -1,9 +1,10 @@
 <?php
-function e($value) {
+function e($value)
+{
     return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
 }
 
-$pdo = new PDO('mysql:host=localhost;dbname=note_app', 'root', '', [
+$pdo = new PDO('mysql:host=127.0.0.1;port=3307;dbname=note_app', 'root', '', [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 ]);
 
