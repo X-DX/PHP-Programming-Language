@@ -149,3 +149,4 @@
     - Filter Data with the WHERE Clause and Fetch Individual Entries with PDO
     - Secure Parameter Handling in PDO: Prevent SQL Injection with Bind Methods
     - Insert Data Securely with INSERT INTO, Placeholders, and the `bindValue` Method
+    - Database Manipulation: Using UPDATE and DELETE FROM Securely
