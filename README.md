@@ -152,3 +152,8 @@
     - Database Manipulation: Using UPDATE and DELETE FROM Securely
     - Prevent Leakage of Database Connection Information in older (<=8.1) PHP Versions
     - Choosing the Charset: Ensure Compatibility with with utf8mb4 encoding
+
+## 19. Project: PHP Diary
+
+    - Design (front-end)
+    -
