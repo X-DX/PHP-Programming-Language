@@ -156,4 +156,11 @@
 ## 19. Project: PHP Diary
 
     - Design (front-end)
-    -
+    - Create DB
+    - Fetch Data from the DataBase
+    - The form Page
+    - Submit Data into the DataBase
+    - Add Pagination
+    - Format the Dates
+    - Upload Files
+    - Resize an Image and Upload
