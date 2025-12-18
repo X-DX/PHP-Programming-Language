@@ -164,3 +164,16 @@
     - Format the Dates
     - Upload Files
     - Resize an Image and Upload
+
+## 20. Header in PHP: Control Server Communication
+
+    - $_SERVER array
+    - HTTP Headers: Examine Browser to Server Communication
+    - HTTP Headers: Examine Server to Browser Communication
+    - Content-Type Header Example: Dynamically Serve CSS with PHP
+    - Output Buffering: Avoid Header Issues and Ensure Seamless File Transmissions
+    - Content-Disposition and Content-Length Header: Implement File Downloads
+    - Location Header: Redirect Users to Files
+    - Example: Build a Newsletter Sign-Up Page using Location Headers
+    - Decipher HTTP Status Codes: Success and Errors
+    - Project: Craft a Custom 404 Error Page and custom url not found by htaccess
