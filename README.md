@@ -177,3 +177,14 @@
     - Example: Build a Newsletter Sign-Up Page using Location Headers
     - Decipher HTTP Status Codes: Success and Errors
     - Project: Craft a Custom 404 Error Page and custom url not found by htaccess
+
+## 21. Functions - Customize Operations For Reuseable Code
+
+    - Declare and Invocate Custom Functions
+    - Function Contexts and Parameter Passing: Transfer Data into Functions
+    - Multiple Parameters & Default Values: Configure Functions
+    - The `return` Statement: Extract Function Output
+    - Multiple `return` Statements: Control Function Output
+    - The `null` Type: Represent Missing Values
+    - Function Redefinition: Best Practices (function_exists())
+    - Handling File Sizes with a Divide & Conquer Strategy
