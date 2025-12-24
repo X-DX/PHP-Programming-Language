@@ -188,3 +188,11 @@
     - The `null` Type: Represent Missing Values
     - Function Redefinition: Best Practices (function_exists())
     - Handling File Sizes with a Divide & Conquer Strategy
+
+## 22. Typed Functions - Write More Reliable and Precise Code
+
+    - Typed Functions: Secure & Document your Code
+    - Union Types: Enable Multiple Parameter Types
+    - Return Types: Enforce Reliable Function Outputs
+    - Nullable Types: Allow for Missing Values as Parameters
+    - Strict Types: Enforce Accurate Type Handling
